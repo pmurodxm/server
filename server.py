@@ -2,7 +2,7 @@ import socket
 import threading
 
 HOST = ''          # barcha interfeyslardan qabul qilish uchun
-PORT = 1994               # o'zingiz xohlagan port (1024 dan katta bo'lsin)
+PORT = 5551               # o'zingiz xohlagan port (1024 dan katta bo'lsin)
 clients = []              # ulangan barcha mijozlar
 
 def broadcast(message, sender=None):
@@ -68,4 +68,5 @@ def main():
         thread.start()
 
 if __name__ == "__main__":
+
     main()
